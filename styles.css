@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0e0e6;
+}
+
+header {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#skills-heading {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#toggle-arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg); 
+}
+
+.two-sections {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-sections > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .two-sections {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+section {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileDescription {
+    width: 600px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .profileDescription {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#profile-pic {
+    width: 150px;
+    height: 200px;
+    border-radius: 5%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profile-pic:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#skills {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#skills.collapsed {
+    max-height: 0;
+}
+
+h3 {
+    color: black;
+    font-size: medium;
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+}
+
+@media (max-width: 420px) {
+    .project-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        
+    }
+}
+
+.spanMERN {
+    font-weight: bold;
+}
+
+
+.interestButtons{
+    gap: 2px;
+    margin-right: 2px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

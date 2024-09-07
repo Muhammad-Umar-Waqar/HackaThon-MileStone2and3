@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Resume Builder</title>
+</head>
+<body>
+    <header>
+        <h1>Interactive Resume Builder</h1>
+    </header>
+
+
+    <main>
+        <form id="resume-form">
+          
+        
+            <div class="form-group">
+                <label for="profilePicture">Upload Profile Picture:</label>
+                <input type="file" id="profilePicture" accept="image/*" />
+            </div>
+            
+           
+            <fieldset>
+                <legend>Interests</legend>
+                <label for="interests">Interests (comma-separated):</label>
+                <input type="text" id="interests" name="interests" required>
+            </fieldset>
+  
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="profile">Profile Description:</label>
+                <input type="text" id="profile" name="profile" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" required></textarea>
+                <label for="Educationduration">Duration:</label>
+                <input type="text" id="Educationduration" name="EductionDuration" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="work-experience">Work Experience:</label>
+                <textarea id="work-experience" name="work-experience" required></textarea>
+                <label for="workDuration">Duration:</label>
+                <textarea id="workDuration" name="workDuration" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Projects</legend>
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="projects" required></textarea>
+                <label for="projectsDuration">Duration:</label>
+                <textarea id="projectsDuration" name="projectsDuration" required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <section id="resume-output">
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+ 
